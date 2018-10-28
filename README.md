@@ -2,45 +2,45 @@ Lections:
 [00]  
 [01]  
 [02]  
-[03]  
+[03]
 
 Helpful information links:  
 * asd
 * qwe
 * zxc
-  
+
 Tools:  
 [00]  
 [01]  
 [02]  
-[03]  
-  
+[03]
+
 Books:  
 [00]  
 [01]  
 [02]  
-[03]  
-  
+[03]
+
 Tasks links:  
 [00]  
 [01]  
 [02]  
-[03]  
-  
+[03]
+
 Papers links:  
 [00]  
 [01]  
 [02]  
-[03]  
-  
+[03]
+
 Final questions:  
 [00]  
 [01]  
 [02]  
-[03]  
-  
+[03]
+
 Labs:  
 [00]  
 [01]  
 [02]  
-[03]  
+[03]
