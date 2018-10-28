@@ -5,10 +5,9 @@ Lections:
 [03]
 
 Helpful information links:
-[00]
-[01]
-[02]
-[03]
+* asd
+* qwe
+* zxc
 
 Tools:
 [00]
