@@ -1,8 +1,8 @@
-Lections:
-[00] 
-[01] 
-[02] 
-[03] 
+Lections:  
+[00]  
+[01]  
+[02]  
+[03]  
 
 Helpful information links:
 * asd
