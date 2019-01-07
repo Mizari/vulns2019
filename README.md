@@ -1,8 +1,7 @@
 Books:  
-[00]  
-[01]  
-[02]  
-[03]
+[00] John Erickson - Hacking, The Art of Exploitation  
+[01] Chris Anley, John Heasman, Felix “FX” Linder, Gerardo Richarte - The Shellcoder’s Handbook  
+
 
 Tasks sites:  
 [00] https://pwnable.tw/challenge/  
