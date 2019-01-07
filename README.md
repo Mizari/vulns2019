@@ -1,27 +1,10 @@
-Lections:  
-[00]  
-[01]  
-[02]  
-[03]
-
-Helpful information links:  
-* asd
-* qwe
-* zxc
-
-Tools:  
-[00]  
-[01]  
-[02]  
-[03]
-
 Books:  
 [00]  
 [01]  
 [02]  
 [03]
 
-Tasks links:  
+Tasks sites:  
 [00]  
 [01]  
 [02]  
@@ -33,14 +16,7 @@ Papers links:
 [02]  
 [03]
 
-Final questions:  
-[00]  
-[01]  
-[02]  
-[03]
-
-Labs:  
-[00]  
-[01]  
-[02]  
-[03]
+Additional/optional information links:  
+* asd
+* qwe
+* zxc
