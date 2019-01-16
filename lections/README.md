@@ -1,9 +1,9 @@
 Lections:  
-[00]  
-[01]  
-[02]  
-[03]
-[04]
-[05]
-[06]
-[07]
+1. [Intro](lection01)
+2. [Stack memory corruption](lection02)
+3. [Information leak](lection03)
+4. [Format string](lection04)
+5. [Mitigations, hardening](lection05)
+6. [UAF](lection06)
+7. [Sanitizers](lection07)
+8. [Fuzzing](lection08)
