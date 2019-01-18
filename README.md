@@ -11,4 +11,4 @@ Tasks sites:
 Additional helpful courses:
 * [Hackerdom CTF course](http://kmb.ufoctf.ru/hackerdom/bin/intro/main.html)
 * [Introduction To Software Exploits](http://opensecuritytraining.info/Exploits1.html)
-* [Modern Binary Exploitation by RPISEC](https://github.com/RPISEC/MBE])
+* [Modern Binary Exploitation by RPISEC](https://github.com/RPISEC/MBE)
