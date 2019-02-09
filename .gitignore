@@ -1,3 +1,4 @@
 *.notes
 *exploit.py
 *.swp
+*payload
