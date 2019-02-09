@@ -1,9 +1,7 @@
-Labs:  
-1. [Stack memory corruption](lab01)
-1. [Information leak](lab02)
-1. [Format string](lab03)
-1. [ROP](lab04)
-1. [UAF](lab05)
+Tasks:
+1. stack memory corruption - shellcode
+2. stack memory corruption - underflow, signedness issues
+
 
 Tools:
 * [pwntools](https://github.com/Gallopsled/pwntools)
