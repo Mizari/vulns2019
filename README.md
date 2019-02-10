@@ -12,3 +12,4 @@ Additional helpful courses:
 * [Hackerdom CTF course](http://kmb.ufoctf.ru/hackerdom/bin/intro/main.html)
 * [Introduction To Software Exploits](http://opensecuritytraining.info/Exploits1.html)
 * [Modern Binary Exploitation by RPISEC](https://github.com/RPISEC/MBE)
+* [Best paper ever](https://j00ru.vexillium.org/slides/2015/insomnihack.pdf)
