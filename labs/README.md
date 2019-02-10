@@ -5,13 +5,11 @@ Tasks:
 
 Tools:
 * [pwntools](https://github.com/Gallopsled/pwntools)
+* [Cool video, smash like and subscribe](https://www.youtube.com/watch?v=zsh-3J-fTSk&t=4661s)
 * [gef](https://github.com/hugsy/gef)
 * checksec
 * [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
 * [ropper](https://github.com/sashs/Ropper)
-* [libcdb](http://libcdb.com/)
-* [libc search](https://libc.blukat.me/)
-* [libc-database](https://github.com/niklasb/libc-database)
 * [onegadget](https://github.com/david942j/one_gadget)
 * [valgrind](http://valgrind.org/)
 * [AFL](http://lcamtuf.coredump.cx/afl/)
