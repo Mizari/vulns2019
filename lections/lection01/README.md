@@ -1,3 +1,5 @@
+[Intro](https://www.docdroid.net/uNnsbAk/intro.pdf)  
+  
 Links:  
 1. [C language issues](https://trailofbits.github.io/ctf/vulnerabilities/references/Dowd_ch06.pdf)
 2. [Live overflow videos](http://liveoverflow.com/binary_hacking/)
