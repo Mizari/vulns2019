@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <sys/mman.h>
 
-const int shellcode_sz = 50;
+const int shellcode_sz = 30;
 
 int main()
 {
@@ -23,6 +23,5 @@ int main()
 
     printf("Enter your name: ");
     gets(name);
-    printf("Lets see, what you've got for me, %s!\n", name);
-    return 0;
+    return printf("Lets see, what you've got for me, %s!\n", name);
 }
