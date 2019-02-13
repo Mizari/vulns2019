@@ -58,7 +58,6 @@ int main()
     uint8_t n_clients = 0ull;
 
     n_clients = 2 + get_random() % MAX_N_CLIENTS;
-    n_clients = 3;
     write(1, &n_clients, 1);
 
     clients = malloc(n_clients * sizeof(void *));
@@ -67,8 +66,6 @@ int main()
         // allocating client
         passlen = 20 + get_random() % MAX_PASS_LEN;
         datalen = 20 + get_random() % MAX_DATA_LEN;
-        passlen = 9;
-        datalen = 17;
         write(1, &passlen, 1);
         write(1, &datalen, 1);
         client = alloca(3 + passlen + datalen);
