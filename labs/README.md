@@ -1,6 +1,7 @@
 Tasks:
 1. stack memory corruption - shellcode
 2. stack memory corruption - underflow, signedness issues
+3. stack memory corruption - overflow, binary protocol, unchecked len
 
 
 Tools:
