@@ -6,3 +6,6 @@ task2: task2.c
 
 task3: task3.c
 	gcc -o task3 task3.c -ggdb -g3 -Wall -Wextra -O3 -no-pie
+
+task4: task4.c
+	gcc -o task4 task4.c -ggdb -g3 -Wall -Wextra -Wno-main -no-pie
