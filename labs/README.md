@@ -3,7 +3,7 @@ Tasks:
 2. stack memory corruption - underflow, signedness issues
 3. stack memory corruption - overflow, binary protocol, unchecked len (assumption: rbp & 0x8 == 0)
 4. stack memory corruption - off-by-one, rbp null poisoning
-5. infoleak - invalid C string, arbitrary write, got overwrite
+5. infoleak - ASLR, invalid C string, arbitrary write, got overwrite
 
 
 Tools:
