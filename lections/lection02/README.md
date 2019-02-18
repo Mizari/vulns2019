@@ -1,4 +1,4 @@
-[Stack memory corruption, part 1](no pdf yet)
+[Stack memory corruption, part 1](https://www.docdroid.net/VtYn0Wh/stackmemorycorruption1.pdf)
 
 Links:  
 1. [Oldschool mustread](http://phrack.org/issues/49/14.html)
