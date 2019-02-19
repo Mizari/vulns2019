@@ -5,8 +5,13 @@
 #define BAD_REG "Client isnt registered!"
 #define BAD_SECRET "Invalid client secret!"
 #define ALREADY_REG "Client is already registered!"
+#define NO_CLIENTS "Cant change data, if no client is registered!"
+#define UNKNOWN_ACTION "Unknown action!"
+#define INVALID_CLIENT_ID "Invalid client id, hacker detected!"
 #define N_CLIENTS 2ll
 #define PASSLEN 0x100ull
+
+uint64_t registered = 0ull;
 
 typedef struct
 {
@@ -19,6 +24,12 @@ void ret2win()
 {
     system("cat flag.txt");
     exit(0);
+}
+
+void dieputs(char *str)
+{
+    puts(str);
+    exit(-1);
 }
 
 void voidputs(char *str)
@@ -53,7 +64,9 @@ int is_client_secret_ok(client_t *client)
 
 void change_client_data(client_t *client)
 {
-    uint64_t new_data = 0ull;
+    if (registered == 0ull)
+        return voidputs(NO_CLIENTS);
+
     if (!is_client_registered(client))
         return voidputs(BAD_REG);
 
@@ -62,6 +75,7 @@ void change_client_data(client_t *client)
         return voidputs(BAD_SECRET);
 
     printf("Enter new data: ");
+    uint64_t new_data;
     scanf("%" SCNd64, &new_data);
     client->data = new_data;
 }
@@ -71,6 +85,7 @@ void register_client(client_t *client)
     if (is_client_registered(client))
         return voidputs(ALREADY_REG);
 
+    registered += 1ull;
     printf("Enter secret: ");
     scanf("%" SCNd64, &client->secret);
     printf("Enter data: ");
@@ -78,66 +93,43 @@ void register_client(client_t *client)
     client->is_registered = 1ull;
 }
 
-void show_client_data(client_t *client)
-{
-    if (!is_client_registered(client))
-        return voidputs(BAD_REG);
-
-    printf("Enter client secret: ");
-    if (!is_client_secret_ok(client))
-        return voidputs(BAD_SECRET);
-
-    printf("Client data is: %" PRIx64 "\n", client->data);
-}
-
-void deregister_client(client_t *client)
-{
-    if (!is_client_registered(client))
-        return voidputs(BAD_REG);
-
-    if (!is_client_secret_ok(client))
-        return voidputs(BAD_SECRET);
-
-    client->is_registered = 0ull;
-    client->secret = 0ull;
-    client->data = 0ull;
-}
-
 int main()
 {
     setvbuf(stdout, NULL, _IONBF, 0);
+    int64_t client1_id = 0;
+    int64_t client2_id = 0;
     uint64_t action = 0;
-    int64_t client_id = 0;
     client_t clients[N_CLIENTS] = {0};
     while (322)
     {
-        printf("\nYour client id: ");
-        if(get_check_client_id(&client_id))
-        {
-            puts("Invalid client id!");
-            continue;
-        }
-        client_t *current_client = &clients[client_id];
-
-        printf("Your action: ");
+        printf("\nYour action: ");
         scanf("%" SCNu64, &action);
+
+        printf("Client id: ");
+        if(get_check_client_id(&client1_id))
+            dieputs(INVALID_CLIENT_ID);
+
+        client_t *client1 = &clients[client1_id];
+
         switch (action)
         {
             case 1llu:
-                register_client(current_client);
+                register_client(client1);
                 break;
             case 2llu:
-                change_client_data(current_client);
+                change_client_data(client1);
                 break;
             case 3llu:
-                show_client_data(current_client);
-                break;
-            case 4llu:
-                deregister_client(current_client);
+                printf("Another client id: ");
+                if(get_check_client_id(&client2_id))
+                    dieputs(INVALID_CLIENT_ID);
+                client_t *client2 = &clients[client2_id];
+
+                change_client_data(client1);
+                change_client_data(client2);
                 break;
             default:
-                printf("default");
-                break;
+                dieputs(UNKNOWN_ACTION);
         }
     }
 }
