@@ -7,6 +7,7 @@
 #define MAX_DATA_LEN 0x10ull
 #define MAX_PASS_LEN 0x10ull
 
+uint8_t n_clients = 0ull;
 void **clients = NULL;
 FILE *f = NULL;
 
@@ -55,17 +56,16 @@ int main()
     uint8_t passlen = 0ull;
     uint8_t datalen = 0ull;
     void *client = NULL;
-    uint8_t n_clients = 0ull;
 
-    n_clients = 2 + get_random() % MAX_N_CLIENTS;
+    n_clients = 10 + get_random() % MAX_N_CLIENTS;
     write(1, &n_clients, 1);
 
     clients = malloc(n_clients * sizeof(void *));
     for (uint64_t i = 0ull; i < n_clients; ++i)
     {
         // allocating client
-        passlen = 20 + get_random() % MAX_PASS_LEN;
-        datalen = 20 + get_random() % MAX_DATA_LEN;
+        passlen = 30 + get_random() % MAX_PASS_LEN;
+        datalen = 30 + get_random() % MAX_DATA_LEN;
         write(1, &passlen, 1);
         write(1, &datalen, 1);
         client = alloca(3 + passlen + datalen);
@@ -85,11 +85,15 @@ int main()
 
     while (1)
     {
+        uint8_t client_id = 0;
         switch (read_byte())
         {
             // change data
             case 1:
-                change_data(clients[read_byte()]);
+                client_id = read_byte();
+                if (client_id >= n_clients)
+                    exit(4);
+                change_data(clients[client_id]);
                 break;
 
             // exit
@@ -97,7 +101,7 @@ int main()
                 goto endmain;
 
             default:
-                exit(4);
+                exit(5);
         }
     }
 
