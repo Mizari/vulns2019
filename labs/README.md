@@ -1,8 +1,8 @@
 Tasks:
 1. stack memory corruption - shellcode
 2. stack memory corruption - underflow, signedness issues
-3. stack memory corruption - overflow, binary protocol, unchecked len (assumption: rbp & 0x8 == 0)
-4. stack memory corruption - off-by-one, rbp null poisoning
+3. stack memory corruption - overflow, binary protocol, unchecked len
+4. stack memory corruption - off-by-one, rbp null poisoning (assumption: rbp & 0xf == 0)
 5. infoleak - ASLR, invalid C string, arbitrary write, got overwrite
 
 
