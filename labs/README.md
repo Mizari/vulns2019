@@ -4,7 +4,7 @@ Tasks:
 3. stack memory corruption - overflow, binary protocol, unchecked len
 4. stack memory corruption - off-by-one, rbp null poisoning (assumption: rbp & 0xf == 0)
 5. infoleak - ASLR, invalid C string, arbitrary write, got overwrite
-6. read-what-where, write-what-where, ret2libc - [35c3ctf sum](https://junior.35c3ctf.ccc.ac/uploads/sum-b22202e31d8d84ec55a8f7cb698e2d656622f806.zip)
+6. integer overflow, read-what-where, write-what-where, ret2libc - [35c3ctf sum](https://junior.35c3ctf.ccc.ac/uploads/sum-b22202e31d8d84ec55a8f7cb698e2d656622f806.zip)
 7. ROP basics - [ROP Emporium callme](https://ropemporium.com/challenge/callme.html)
 8. More ROP - [ROP Emporium badchars](https://ropemporium.com/challenge/badchars.html)
 9. ROP chain pivoting - [ROP Emporium pivot](https://ropemporium.com/challenge/pivot.html)
