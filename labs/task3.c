@@ -77,8 +77,8 @@ int main()
         for (uint8_t j = 0; j < passlen; ++j)
             *(uint8_t*)(client + 2 + j) = get_random();
         *(uint8_t*)(client + 2 + passlen) = datalen;
-        for (uint8_t j = 0; j < passlen; ++j)
-            *(uint8_t*)(client + 3 + passlen) = get_random();
+        for (uint8_t j = 0; j < datalen; ++j)
+            *(uint8_t*)(client + 3 + passlen + j) = get_random();
     }
 
     *(uint8_t*)(clients[n_clients - 1]) = 1;
