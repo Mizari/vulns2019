@@ -8,6 +8,7 @@ Tasks:
 7. ROP basics - [ROP Emporium callme](https://ropemporium.com/challenge/callme.html)
 8. More ROP - [ROP Emporium badchars](https://ropemporium.com/challenge/badchars.html)
 9. ROP chain pivoting - [ROP Emporium pivot](https://ropemporium.com/challenge/pivot.html)
+10. Format string - stack format string, infoleak, full relro
 
 
 Tools:
