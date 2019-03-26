@@ -12,3 +12,6 @@ task4: task4.c
 
 task5: task5.c
 	gcc -o task5 task5.c -ggdb -g3 -Wall -Wextra
+
+task10: task10.c
+	gcc -o task10 task10.c -ggdb -g3 -Wall -Wextra -z,relro -z,now
